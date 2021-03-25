@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Panel de Control: Lista de Proveedores</title>
+</head>
+<body>
+    <header class="header-principal">
+        <nav>
+            <div>
+                <!-- Meter logo eventualmente -->
+            </div> 
+
+            <div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Acceso</a></li>
+                    <li><a href="#">Registro</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <h1>Haga su Solicitud de Servicio</h1>
+          <p>Contacte a nuestros proveedores 24/7 y esté un paso más cerca de conseguir los servicios y productos que 
+            hacen más feliz a su mascota.
+          </p> -->   
+          <h1>Haga su Solicitud de Servicio</h1>
+          <p>Contacte a nuestros proveedores 24/7 y esté un paso más cerca de conseguir los servicios y productos que 
+            hacen más feliz a su mascota. 
+          </p>
+    </header>    
+                 
+        <section>
+
+          
+                    
+
+
+
+          <!-- <h1>Haga su Solicitud de Servicio</h1>
+          
+        </section>
+        
+        <form action="/my-handling-form-page" method="post">
+          <section>
+                <!-- Checkear form action -->
+                  <!-- <h2>Solicitud</h2> -->
+             <!-- <fieldset class="estilo-registro">
+              <legend>Encargado de Mascota</legend>-->
+                
+               <!-- <ul>
+                <li>-->
+                  <!-- Checkear asterisco en rojo -->
+                  <!-- <label for="nombre">Nombre
+                    <input type="text" name="nombre" value="Nombre*" required>
+                  </label>
+                  <label for="primer-apellido">Primer Apellido
+                  <input type="text" name="primer-apellido" value="Primer Apellido*" required>
+                  </label>
+                  <label for="segundo-apellido">Segundo Apellido
+                    <input type="text" name="segundo-apellido" value="Segundo Apellido">
+                  </label>
+                </li>
+              <ul> 
+            </fieldset>   
+
+            <p>
+            <fieldset class="estilo-registro">
+              <legend>Contacto</legend>  
+                <label for="Correo electrónico">Correo Electrónico
+                  <input type="text" name="correo" value="Correo Electrónico*" required>
+                </label> 
+            </fieldset>
+            </p> -->
+
+            <!-- Checkear legend o seleccionado -->
+            <p>
+            <fieldset class="estilo-registro">
+              <legend>Mascota:*</legend>
+              <ul>
+                <li>
+                  <label for="mascota">
+                    <input type="checkbox" name="mascota"> Mickey</label>
+                  </li>
+                <li>
+                  <label for="mascota">
+                    <input type="checkbox" name="mascota"> Minnie</label>
+                </li>
+                <li>
+                  <label for="mascota">
+                    <input type="checkbox" name="mascota"> Pluto</label>
+                </li>
+              </ul>
+            </fieldset>
+            </p>  
+            
+            <p>
+            Detalles del Servicio: Por favor, elija su proveedor y fecha de preferencia. Para Servicios a Domicilio, recuerde incluír la dirección.</p>
+            </fieldset class="estilo-registro">
+              <ul>
+                <li>
+                  <label for=Servicio>Servicio
+                  <select id="servicio" name="servicio" required>
+                  <option value="none" selected>Seleccione el Servicio*</option>
+                  <optgroup label="Proveedores">
+                  <option value="1">Centro de Acupuntura Patitas</option>
+                  <option value="2">Casa del Groomer San Sebastián</option>
+                  <option value="3">Veterinaria Bruno</option> 
+                </li>
+                
+                <li>
+                  <label for="fecha">Fecha para Servicio</label>
+                    <input type="date" id="fecha" name="fecha" min="2021-03-28" max="2021-12-31">
+                </li>
+              
+              <legend>Dirección</legend>
+                <li>
+                  <label for=provincia>Provincia
+                    <select id="provincia" name="provincia">
+                    <option value="none" selected>Provincia</option>
+                    <optgroup label="Costa Rica">
+                    <option value="1">San José</option>
+                    <option value="2">Alajuela</option>
+                    <option value="3">Cartago</option>
+                    <option value="4">Heredia</option>
+                    <option value="5">Guanacaste</option>
+                    <option value="6">Puntarenas</option>
+                    <option value="7">Limón</option>
+                    </optgroup>
+                  </select>
+                
+                  </label for=cantón>Cantón
+                  <!-- Cómo relaciono la Provincia a Cantón/Distrito -->
+                    <select id="cantón" name="cantón">
+                    <option value="none" selected>Cantón</option>
+                    <optgroup label="San José">
+                    <option value="1">San José</option>
+                    <option value="2">Escazú</option>
+                    <option value="3">Desamparados</option>
+                    <option value="4">Puriscal</option>
+                    <option value="5">Tarrazú</option>
+                    <option value="6">Aserrí</option>
+                    <option value="7">Mora</option>
+                    </optgroup>
+                  </select>
+                
+                  <!-- 101 San José
+  102 Escazú
+  103 Desamparados
+  104 Puriscal
+  105 Tarrazú
+  106 Aserrí
+  107 Mora
+  108 Goicoechea
+  109 Santa Ana
+  110 Alajuelita
+  111 Vásquez de Coronado
+  112 Acosta
+  113 Tibás
+  114 Moravia
+  115 Montes de Oca
+  116 Turrubares
+  117 Dota
+  118 Currridabat
+  119 Pérez Zeledón
+  120 León Cortés
+Cómo relaciono la Provincia a Cantón/Distrito -->
+                <label for=distrito>Distrito
+                  <select id="distrito" name="distrito">
+                  <option value="none" selected>Distrito</option>
+                  <optgroup label="San José">
+                  <option value="1">Carmen</option>
+                  <option value="2">Merced</option>
+                  <option value="3">Hospital</option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                  <option value="6"></option>
+                  <option value="7"></option>
+                  </optgroup>
+                </select>
+              </label>
+              </li>
+
+              <li>
+                <label for=dirección>Dirección
+                <input type="text" name="dirección" value="Dirección Exacta">
+                </label>
+              </li> 
+            </ul>
+          </fieldset>
+          </p>
+            
+          <!-- <li>
+                        <label for="mascota">
+                        <input type="checkbox" name="mascota" required> Seleccione</label> 
+                     </li> -->
+                 <!-- Otros Servicios
+      <option value="4">""</option>
+      <option value="5">""</option>
+      <option value="6">""</option>
+      <option value="7">""</option>
+      </optgroup>
+    <label for="número-identificación">
+                    <input type="text" name="número-identificación" value="Número de Identificación*" required>
+                    </label> 
+                  <label for="empresa">
+                <input type="text" name="empresa" value="Nombre de la Empresa">
+              </label>  -->
+    
+          </section>
+
+          <section>
+            <p>
+              <input type="checkbox" name="términos" value="términos" >
+                <label>He leído y acepto la Política de Privacidad, Términos y Condiciones</label>
+            </p>
+          </section>        
+              
+          <section>    
+            <p>
+              <!-- <button type="submit">Enviar Solicitud</button>-->
+              <button type="button" class="mdc-button mdc-button--raised mdc--theme-secondary">Enviar Solicitud</button>
+                  </div>
+            </p>
+          </section>     
+           
+          </form>
+        </section>
+    </header>
+
+    
+
+
+</body>
+</html>
+
+
+
+
+   
